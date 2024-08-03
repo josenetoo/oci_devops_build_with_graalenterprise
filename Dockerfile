@@ -19,9 +19,8 @@ FROM frolvlad/alpine-glibc:alpine-3.12
 RUN apk update && apk add libstdc++
 ## End: Option 2
 
-ARG APP_FILE
 EXPOSE 8080
 WORKDIR /home/app
 
-COPY target/${APP_FILE} app
+COPY target/my-app app
 ENTRYPOINT ["./app"]
