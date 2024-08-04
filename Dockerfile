@@ -25,4 +25,6 @@ EXPOSE 8080
 WORKDIR /home/app
 
 COPY target/my-app app
-ENTRYPOINT ["./app"]
+RUN pwd
+
+ENTRYPOINT ["./home/app/app"]
