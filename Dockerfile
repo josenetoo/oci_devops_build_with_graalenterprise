@@ -29,6 +29,6 @@
 
 
 FROM ubuntu:jammy
-EXPOSE 8080
+EXPOSE 80
 COPY target/my-app /my-app
 CMD ["/my-app"]
