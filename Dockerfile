@@ -26,5 +26,6 @@ WORKDIR /home/app
 
 COPY target/my-app app
 RUN pwd
+RUN ls -la
 
-ENTRYPOINT ["./home/app/app"]
+ENTRYPOINT ["./my-app"]
