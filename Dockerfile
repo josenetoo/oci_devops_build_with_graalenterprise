@@ -28,4 +28,4 @@ COPY target/my-app app
 RUN pwd
 RUN ls -la
 
-ENTRYPOINT ["./my-app"]
+ENTRYPOINT ["/app"]
