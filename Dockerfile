@@ -15,9 +15,11 @@
 ## End: Option 1
 
 ## Begin: Option 2
-FROM frolvlad/alpine-glibc:alpine-3.12
-RUN apk update && apk add libstdc++
+# FROM frolvlad/alpine-glibc:alpine-3.12
+# RUN apk update && apk add libstdc++
 ## End: Option 2
+
+FROM scratch
 
 EXPOSE 8080
 WORKDIR /home/app
