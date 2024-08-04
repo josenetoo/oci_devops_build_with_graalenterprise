@@ -19,10 +19,16 @@
 # RUN apk update && apk add libstdc++
 ## End: Option 2
 
-FROM gcr.io/distroless/base
+# FROM gcr.io/distroless/base
 
+# EXPOSE 8080
+# WORKDIR /home/app
+
+# COPY target/my-app app
+# ENTRYPOINT ["./app"]
+
+
+FROM ubuntu:jammy
 EXPOSE 8080
-WORKDIR /home/app
-
-COPY target/my-app app
-ENTRYPOINT ["./app"]
+COPY target/my-app /my-app
+CMD ["/my-app"]
