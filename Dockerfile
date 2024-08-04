@@ -19,10 +19,8 @@
 # RUN apk update && apk add libstdc++
 ## End: Option 2
 
-FROM alpine
-## End: Option 2
+FROM gcr.io/distroless/base## End: Option 2
 
-ARG APP_FILE
 EXPOSE 8080
 WORKDIR /home/app
 
