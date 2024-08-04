@@ -19,13 +19,12 @@
 # RUN apk update && apk add libstdc++
 ## End: Option 2
 
-FROM openjdk:17-jdk-alpine
+FROM alpine
+## End: Option 2
 
+ARG APP_FILE
 EXPOSE 8080
 WORKDIR /home/app
 
 COPY target/my-app app
-RUN pwd
-RUN ls -la
-
-ENTRYPOINT ["/app"]
+ENTRYPOINT ["./app"]
