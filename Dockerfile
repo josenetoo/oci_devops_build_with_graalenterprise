@@ -19,7 +19,7 @@
 # RUN apk update && apk add libstdc++
 ## End: Option 2
 
-FROM scratch
+FROM openjdk:17-jdk-alpine
 
 EXPOSE 8080
 WORKDIR /home/app
