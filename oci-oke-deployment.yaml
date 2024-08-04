@@ -15,7 +15,8 @@ spec:
       containers:
         - name: java-graalvm-app
           # enter the path to your image, be sure to include the correct region prefix
-          image: vcp.ocir.io/idi1o0a010nx/java-graalvm-app:${BUILDRUN_HASH}
+          image: vcp.ocir.io/idi1o0a010nx/java-graalvm-app:qmtoief
+          # image: vcp.ocir.io/idi1o0a010nx/java-graalvm-app:${BUILDRUN_HASH}
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
