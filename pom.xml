@@ -20,6 +20,11 @@
 		<native.maven.plugin.version>0.9.13</native.maven.plugin.version>
   </properties>
 
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+	
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
