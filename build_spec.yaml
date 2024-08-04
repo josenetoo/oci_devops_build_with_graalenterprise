@@ -44,9 +44,9 @@ outputArtifacts:
   # - name: app_jar
   #   type: BINARY
   #   location: target/my-app-1.0-SNAPSHOT.jar
-  - name: app_native_executable
-    type: BINARY
-    location: target/my-app
+  # - name: app_native_executable
+  #   type: BINARY
+  #   location: target/my-app
   - name: runtime_image
     type: DOCKER_IMAGE
     # this is only the locally exported container image name
